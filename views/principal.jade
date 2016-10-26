@@ -1,0 +1,33 @@
+extends layout
+
+block content
+	p Hola #{datos[0].nombre}
+	br 
+	a( href="consulta" ) Ver amigos
+	br
+	a( href="morir" ) Morir(eliminar cuenta)
+	br
+	p quieres cambiar tu info?
+	form( action="modifica", method="POST" ) 
+		p id
+		input( type="text", id="id", name="id" )
+		br
+		p nombre
+		input( type="text", id="nombre", name="nombre" )
+		br
+		p apellidop
+		input( type="text", id="apellidop", name="apellidop" )
+		br
+		p apellidom
+		input( type="text", id="apellidom", name="apellidom" )
+		br
+		p email
+		input( type="text", id="email", name="email" )
+		br
+		p sexo
+		input( type="text", id="sexo", name="sexo" )
+		br
+		p Contrasenia
+		input( type="password", id="password", name="password" )
+		br
+		input( type="submit", value="Cambia Dude!" )

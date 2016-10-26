@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	form( action="inicia", method="POST" ) 
+		input( type="text", id="user", name="user" )
+		input( type="password", id="pass", name="pass" )
+		input( type="submit", value="Inicia!" )
+	br
+	a( href="insercion" ) No Te haz unido?
